@@ -9,7 +9,11 @@ public class Car {
     private double speed;
     private double gasolineLevel;
     private String typeName;
-    private double gasolineTankCapasity;
+    private double TankCapasity;
+
+    private double targetSpeed;
+    private boolean cruiseControlState;
+
 
     /* This is the method (constructor) called when a new instance of Car is created (with new).
      * Constructors may also have arguments.
@@ -20,10 +24,11 @@ public class Car {
         // The reference is useful if you want to use parameter names that are
         // identical to instance variable names (and for more, later on)
     }
-    public Car(String typeName,double speed,double gasolineTankCapasity){
+    public Car(String typeName,double speed,double TankCapasity){
+        gasolineLevel = 0;
         this.typeName = typeName;
         this.speed = speed;
-        this.gasolineTankCapasity = gasolineTankCapasity;
+        this.TankCapasity = TankCapasity;
     }
 
     /* Implementations of some methods.
@@ -35,16 +40,58 @@ public class Car {
         else
             speed = 0;
     }
-    void decelerate(int amount) {
+    void decelerate(double amount) {
         if (gasolineLevel > 0) {
             if (amount > 0)
                 speed = Math.max(0, speed - amount);
         } else
             speed = 0;
     }
+
+
+    public void setTarget(int target){
+        if(0 < target && target < 120){
+        targetSpeed = target;
+        }
+        else{
+            System.out.println("target speed outside bounds");
+        }
+    }
+
+    public double getTarget(){
+        return targetSpeed;
+    }
+
+    public void toggleCruise(){
+        cruiseControlState = !cruiseControlState;
+    }
+
+
     double getSpeed() {
         return speed;
     }
+
+    public void Cruising(){
+        if(cruiseControlState) {
+            if(targetSpeed < 0){
+                System.out.println("taget speed not set");
+                return;
+            }
+            while(speed < targetSpeed){
+                this.accelerate();
+            }
+            if(speed > targetSpeed){
+                this.decelerate(speed-targetSpeed);
+            }
+
+
+
+
+        }
+
+    }
+
+
     String getTypeName() {
         return typeName;
     }

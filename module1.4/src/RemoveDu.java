@@ -41,9 +41,9 @@ public class RemoveDu {
 
 
 
-        for(int a = 0; a < lista2.length; a++){
+        for(int numer: lista2){
 
-                System.out.print(lista2[a]);
+                System.out.print(numer);
                 System.out.print(" ");
 
 
