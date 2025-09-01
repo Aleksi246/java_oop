@@ -1,0 +1,9 @@
+
+Esimerkiksi uusia bussilinjoja voisi simuloida virtuaalisesti ennen niiden käyttöönottoa.
+Simulaatiossa voisi helposti testata eri matkustajamääriä ja voisi päätellä nopeasti montako bussia tarvitsee olla ajossa esimerkiksi
+arki ammuisin tai viikonloppuisin. Oikeassa maailmassa tämänlaisissa testeissä kestäisi luonnollisesti viikkoja.
+
+Bussilinjojen virtuaalinen simulointi ei käyttäisi polttoainetta kuten oikean elämän koeajot.
+
+Toinen esimerkki voisi olla ilmastointisysteemi. Suurissa rakennuksissa voisi olla hyödyllistä simuloida ilman virtaus ja lämmönvaihto ennen
+ilmastointisysteemien asennusta. Tälläinen simulaatio voisi olla monimutkikasta, mutta silti parempi vaihtoehto kuin esimerkiksi homevauriot.

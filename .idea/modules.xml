@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/module2.1/Car/Car.iml" filepath="$PROJECT_DIR$/module2.1/Car/Car.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_oop.iml" filepath="$PROJECT_DIR$/java_oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module3.3/library/library.iml" filepath="$PROJECT_DIR$/module3.3/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module3.3/library/model/model.iml" filepath="$PROJECT_DIR$/module3.3/library/model/model.iml" />
       <module fileurl="file://$PROJECT_DIR$/module1/module1.iml" filepath="$PROJECT_DIR$/module1/module1.iml" />
       <module fileurl="file://$PROJECT_DIR$/module1.2/module1.2.iml" filepath="$PROJECT_DIR$/module1.2/module1.2.iml" />
       <module fileurl="file://$PROJECT_DIR$/module1.3/module1.3.iml" filepath="$PROJECT_DIR$/module1.3/module1.3.iml" />
@@ -15,6 +17,10 @@
       <module fileurl="file://$PROJECT_DIR$/module3.1/module3.1.iml" filepath="$PROJECT_DIR$/module3.1/module3.1.iml" />
       <module fileurl="file://$PROJECT_DIR$/module3.2/module3.2.iml" filepath="$PROJECT_DIR$/module3.2/module3.2.iml" />
       <module fileurl="file://$PROJECT_DIR$/module3.2/module3.2.2/module3.2.2.iml" filepath="$PROJECT_DIR$/module3.2/module3.2.2/module3.2.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module3.3/module3.3.iml" filepath="$PROJECT_DIR$/module3.3/module3.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projectmodule1.1/projectmodule1.1.iml" filepath="$PROJECT_DIR$/projectmodule1.1/projectmodule1.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module3.3/library/system/system.iml" filepath="$PROJECT_DIR$/module3.3/library/system/system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
     </modules>
   </component>
 </project>
