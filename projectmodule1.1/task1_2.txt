@@ -1,0 +1,7 @@
+Bussilinjoissa variaatio voisi syntyä eri päivän ajoista tai päivistä.
+Bussilinjoilla olisi riippuvaisuuksia keskenään ja uuden avaaminen vaikuttaisi muihin linjoihin.
+Monimutkaisuutta loisi esimerkiksi muu liikenne.
+
+Ilmastointisysteemissä variaatiota tulisi eri vuodenaijoista.
+Monimutkaisuutta simulaatiossa voisi olla ilman dynamiikka.
+Ehkä riippuvuutta voisi syntyä rakennuksen eri tilojen eri tarpeista. Esimerkiksi urheilu tiloissapitäisi olla kylmempää kuin luokkahuoneissa.
