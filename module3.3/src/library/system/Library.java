@@ -18,6 +18,57 @@ public class Library {
         libraryMembers.add(new LibraryMember(name));
     }
 
+    public static void reserveBook(Book book, int memberId){
+        LibraryMember temp = null;
+        for(LibraryMember member : libraryMembers){
+            if(member.getId() == memberId){
+                temp = (LibraryMember) member;
+            }
+        }
+        if(temp == null){
+            return;
+        }
+        for(Book b : libraryBooks) {
+            if(b.equals(book)) {
+                book = b;
+                break;
+            }
+        }
+        if(book.getReserved()){
+            return;
+        }
+
+        book.toggleReserved();
+        temp.addBookToReserved(book);
+       // System.out.println("toimii");
+    }
+    public static void cancelReservation(Book book, int memberId){
+        LibraryMember temp = null;
+        for(LibraryMember member : libraryMembers){
+            if(member.getId() == memberId){
+                temp = (LibraryMember) member;
+            }
+        }
+        if(temp == null){
+            return;
+        }
+        for(Book b : libraryBooks) {
+            if(b.equals(book)) {
+                book = b;
+                break;
+            }
+        }
+        if(!book.getReserved()){
+            return;
+        }
+        if(!temp.getReservedBookList().contains(book)){
+            return;
+        }
+        book.toggleReserved();
+        temp.removeBookFromReserved(book);
+    }
+
+
 
     public static void borrowBook(Book book, int memberId){
         LibraryMember temp = null;
@@ -29,6 +80,13 @@ public class Library {
         if(temp == null){
             return;
         }
+        //List<Book> temp2 = temp.getReservedBookList();
+        //boolean temp2contains = temp2.contains(book);
+        if(book.getReserved() && !temp.getReservedBookList().contains(book)){
+            return;
+        }
+
+
         for(Book b : libraryBooks) {
             if(b.equals(book)) {
                 libraryBooks.remove(book);
@@ -52,6 +110,7 @@ public class Library {
             if(b.equals(book)) {
                 libraryBooks.add(book);
                 temp.returnBook(book);
+                cancelReservation(book,temp.getId());
                 break;
             }
         }
@@ -60,6 +119,14 @@ public class Library {
     public static void displayLibrarysBooks(){
         for(Book book : libraryBooks){
             System.out.println(book);
+        }
+    }
+
+    public static void displayReservedBooks(){
+        for(Book book : libraryBooks){
+            if(book.getReserved()) {
+                System.out.println(book);
+            }
         }
     }
 

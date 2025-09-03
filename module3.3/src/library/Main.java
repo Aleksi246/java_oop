@@ -34,6 +34,23 @@ public class Main {
         //Library.returnBook(new Book("1984", "George Orwell", "9780451524935"),2);
         Library.returnBook(new Book("The Great Gatsby", "F. Scott Fitzgerald", "9780743273565"),1);
         Library.displayLibrarysBooks();
+        System.out.println("");
+
+        Library.reserveBook(new Book("To Kill a Mockingbird", "Harper Lee", "9780061120084"),1);
+        Library.displayReservedBooks();
+
+        System.out.println("");
+
+        Library.cancelReservation(new Book("To Kill a Mockingbird", "Harper Lee", "9780061120084"),2);
+
+        System.out.println("");
+
+        Library.displayReservedBooks();
+
+        System.out.println("");
+        Library.cancelReservation(new Book("To Kill a Mockingbird", "Harper Lee", "9780061120084"),1);
+
+        Library.displayReservedBooks();
     }
 
 }

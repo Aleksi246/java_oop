@@ -24,8 +24,17 @@ public class LibraryMember {
     public int getCount(){
         return count;
     }
+    public List<Book> getReservedBookList(){
+        return reservedBooks;
+    }
+    public void addBookToReserved(Book book){
+        reservedBooks.add(book);
 
+    }
+    public void removeBookFromReserved(Book book){
+        reservedBooks.remove(book);
 
+    }
 
 
     public void borrowBook(Book book){
