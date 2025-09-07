@@ -1,0 +1,3 @@
+a) Arrival event needs to create another arrival.
+   Otherwise the simulation would be just one event.
+b) Start of the service should generate when the service will end.
