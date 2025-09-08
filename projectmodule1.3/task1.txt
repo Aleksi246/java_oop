@@ -1,0 +1,18 @@
+I could make a for loop in which an age value is generated based on the distribution.
+
+if the age probability was: 10% 18yo,
+                            40% 19yo,
+                            50% 20yo
+
+code would be something like:
+
+lista = []
+for 1000
+    rand = random value from 0 to 1
+
+    if  0 < rand < 0.1
+        add 18 to lista
+    if  0.1 < rand < 0.5
+        add 19 to lista
+    if  0.5 < rand < 1
+        add 20 to lista

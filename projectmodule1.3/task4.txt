@@ -1,0 +1,11 @@
+Exponentiaalista distribuutiota voisi käyttää arpomaan asiakkaiden tulotiheyttä.
+Kolmivaihe simulaatiossa voisi esim arpoa uuden asiakkaan aikaleiman kun yksi asiakas tulee systeemiin.
+
+Normaalijakaumaa voisi käyttää arpomaan kauanko asiakas viettää esimerkiksi vastaanottotiskillä (ei mukaanlukien jonotusta)
+
+log-normaalijakaumaa voisi käyttää arpomaan asiakkaalle ajan jonka viettää päämäärässä esimerkiksi lääkärin vastaanotolla.
+
+
+
+
+

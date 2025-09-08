@@ -1,0 +1,1 @@
+because in a singleton the constructor is private and the instance of the singleton is static.
