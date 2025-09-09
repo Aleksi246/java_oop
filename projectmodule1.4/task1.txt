@@ -1,0 +1,15 @@
+in a bank
+A arrival client count would be the total amount of clients that came in during a work day.
+C clients served would be the amount of clients of A that got served.
+B would be the time that the bank was servicing a client.
+T would be the time of the work day maybe 8 hours
+
+U would tell the ratio between serving time and total time. would tell info about the idle time. would be useful in figuring if there is correct amount of workers in the bank.
+X would just tell how many clients got serviced during the work day.
+S would tell how long one serve would take on average. useful in figuring out if one banker is under performing.
+
+Ri would be the time a single customer spent in bank
+W would be the sum of Ri
+
+R would tell on average how much time a client needs to spend in the bank to get served.
+N would tell on average how many customers are present on average.

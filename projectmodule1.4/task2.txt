@@ -1,0 +1,10 @@
+I would think that performance measures the service points performance would be  maintained/updated/computed by them.
+So for example a banker would keep time of how much work he has done during the day.
+
+performance measures maintained/updated/computed by service point would then be:
+    B,C,A and maybe T Naturally measures derived from these (U,X,S) would also be.
+
+performance measures maintained/updated/computed by the customer would then be:
+    Ri and W
+
+performance measures maintained/updated/computed by both: R and N
