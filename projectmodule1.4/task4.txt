@@ -1,0 +1,11 @@
+
+while
+
+    get time of first item in eventlist
+
+    do all actions of all items on event list with same time
+    (somehow these should be done in the order that they came into the eventlist even though they are with the same timestamp)
+
+    check all conditional events
+    if any was done check again over and over
+    (maybe with a counter of some type)
