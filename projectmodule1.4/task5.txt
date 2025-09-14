@@ -1,0 +1,10 @@
+a)  A phase coding means moving the
+    clock and looking at the eventlist
+
+b)  Coding B events means coding a random
+    distribution which the events use to
+    decide a time on the clock where they happen.
+
+c)  Coding C events would mean coding some kind
+    of if statements. And doing these until
+    none of the if statements came true.
